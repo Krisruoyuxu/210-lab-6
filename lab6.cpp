@@ -20,16 +20,25 @@ void enterArrayData(double* arr, int n){
 
     for (int i = 0; i < SIZE; i++){
         cout << "  > Element #" << i << ": "; 
-        cin >> *(arr+i);
+        cin >> *(arr + i);
     }
     cout << "Data entry complete." << endl;
 
 }
 
 void outputArrayData(double* arr, int n){
-    //
+    cout << "Outputting array elements: ";
+    for (int i = 0; i < SIZE; i++){
+        cout << *(arr + i) <<" ";
+    }
+    cout << endl;
 }
 
 double sumArray(double* arr, int n){
-    //
+    int sum = 0;
+    for (int i = 0; i < SIZE; i++){
+        sum += *(arr + i);
+    }
+
+    cout << "Sum of values: " << sum <<endl;
 }
