@@ -19,8 +19,10 @@ void enterArrayData(double* arr, int n){
     cout << "Data entry for the array: "<<endl;
 
     for (int i = 0; i < SIZE; i++){
-        cin 
+        cout << "  > Element #" << i << ": "; 
+        cin >> *(arr+i);
     }
+    cout << "Data entry complete." << endl;
 
 }
 
